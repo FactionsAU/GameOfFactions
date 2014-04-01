@@ -1,0 +1,24 @@
+{
+  "aliasesOuterMCore": [
+    "mcore"
+  ],
+  "aliasesOuterMCoreUsys": [
+    "usys"
+  ],
+  "aliasesOuterMCoreMStore": [
+    "mstore"
+  ],
+  "usingRecipientChatEvent": true,
+  "forcingOnePlayerNameCase": true,
+  "permissionDeniedFormats": {
+    "some.awesome.permission.node": "<b>You must be awesome to %s<b>.",
+    "some.derp.permission.node.1": "derp",
+    "some.derp.permission.node.2": "derp",
+    "some.derp.permission.node.3": "derp",
+    "derp": "<b>Only derp people can %s<b>.\n<i>Ask a moderator to become derp."
+  },
+  "permissionToTpdelay": {
+    "mcore.notpdelay": 0,
+    "default": 10
+  }
+}
