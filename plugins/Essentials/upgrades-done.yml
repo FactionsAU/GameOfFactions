@@ -1,0 +1,7 @@
+updateSpawnsToNewSpawnsConfig: true
+updateJailsToNewJailsConfig: true
+warnMetrics: true
+moveWorthValuesToWorthYml: true
+movemotdToFile: true
+moverulesToFile: true
+deleteOldItemsCsv: true

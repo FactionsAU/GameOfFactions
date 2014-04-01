@@ -1,0 +1,24 @@
+uuid: 5c7a2608-d5dd-4167-8638-d02b6d58dae6
+timestamps:
+  login: 1396269856663
+  kits:
+    color: 1396270936743
+    dtools: 1396270900267
+    notch: 1396270926016
+  logout: 1396271723011
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: -0.5
+  y: 63.0
+  z: 191.5
+  yaw: 0.0
+  pitch: 0.0
+afk: false
+logoutlocation:
+  world: world
+  x: -40.553562147030526
+  y: 76.0
+  z: 66.7852938881656
+  yaw: 197.69672
+  pitch: 90.0
