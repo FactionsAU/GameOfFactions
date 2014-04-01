@@ -16,7 +16,7 @@ setlocal ENABLEDELAYEDEXPANSION
 	set /a c=c+1
             
 			:start
-			if %chose%==!c!  java -Xdebug -Xrunjdwp:transport=dt_socket,address=1000,server=y,suspend=n -Xms1024M -Xmx1024M -jar %%f -o true
+			if %chose%==!c!  java -Xdebug -Xrunjdwp:transport=dt_socket,address=1000,server=y,suspend=n -Xms1024M -Xmx1024M -XX:MaxPermSize=128M -jar %%f -o true
 			goto start
     )
 	
