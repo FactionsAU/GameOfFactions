@@ -13,13 +13,13 @@
 config-version: 5
 commands:
   tab-complete: true
+  log: true
+  silent-commandblock-console: false
   replace-commands:
   - setblock
   - summon
   - testforblock
   - tellraw
-  log: true
-  silent-commandblock-console: false
   spam-exclusions:
   - /skill
 messages:
@@ -30,14 +30,14 @@ messages:
   outdated-server: Outdated server! I'm still on {0}
   restart: Server is restarting
 settings:
-  player-shuffle: 0
   netty-threads: 4
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
+  player-shuffle: 0
   bungeecord: false
-  sample-count: 12
   late-bind: false
+  sample-count: 12
   filter-creative-items: true
 stats:
   disable-saving: false
@@ -45,20 +45,26 @@ stats:
 world-settings:
   default:
     verbose: true
-    view-distance: 10
     merge-radius:
       exp: 3.0
       item: 2.5
+    view-distance: 10
     chunks-per-tick: 650
     clear-tick-list: false
-    mob-spawn-range: 4
     nerf-spawner-mobs: false
+    mob-spawn-range: 4
+    enable-zombie-pigmen-portal-spawns: true
+    zombie-aggressive-towards-villager: true
     entity-tracking-range:
       players: 48
       animals: 48
       monsters: 48
       misc: 32
       other: 64
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -67,10 +73,12 @@ world-settings:
       pumpkin-modifier: 100
       sapling-modifier: 100
       wheat-modifier: 100
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
+    max-bulk-chunks: 5
+    max-entity-collisions: 8
+    save-structure-info: true
+    arrow-despawn-rate: 1200
+    item-despawn-rate: 6000
+    random-light-updates: false
     ticks-per:
       hopper-transfer: 8
       hopper-check: 8
@@ -94,11 +102,3 @@ world-settings:
       replace-blocks:
       - 1
       - 5
-    random-light-updates: false
-    max-entity-collisions: 8
-    max-bulk-chunks: 5
-    save-structure-info: true
-    arrow-despawn-rate: 1200
-    item-despawn-rate: 6000
-    zombie-aggressive-towards-villager: true
-    enable-zombie-pigmen-portal-spawns: true
