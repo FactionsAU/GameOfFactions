@@ -13,15 +13,15 @@
 config-version: 5
 commands:
   tab-complete: true
-  log: true
   silent-commandblock-console: false
+  spam-exclusions:
+  - /skill
   replace-commands:
   - setblock
   - summon
   - testforblock
   - tellraw
-  spam-exclusions:
-  - /skill
+  log: true
 messages:
   whitelist: You are not whitelisted on this server!
   unknown-command: Unknown command. Type "/help" for help.
@@ -30,58 +30,34 @@ messages:
   outdated-server: Outdated server! I'm still on {0}
   restart: Server is restarting
 settings:
-  netty-threads: 4
+  player-shuffle: 0
+  late-bind: false
+  bungeecord: false
+  sample-count: 12
+  filter-creative-items: true
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
-  player-shuffle: 0
-  bungeecord: false
-  late-bind: false
-  sample-count: 12
-  filter-creative-items: true
+  netty-threads: 4
 stats:
   disable-saving: false
   forced-stats: {}
 world-settings:
   default:
     verbose: true
+    view-distance: 10
     merge-radius:
       exp: 3.0
       item: 2.5
-    view-distance: 10
     chunks-per-tick: 650
     clear-tick-list: false
     nerf-spawner-mobs: false
     mob-spawn-range: 4
+    item-despawn-rate: 6000
+    arrow-despawn-rate: 1200
     enable-zombie-pigmen-portal-spawns: true
     zombie-aggressive-towards-villager: true
-    entity-tracking-range:
-      players: 48
-      animals: 48
-      monsters: 48
-      misc: 32
-      other: 64
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
-    growth:
-      cactus-modifier: 100
-      cane-modifier: 100
-      melon-modifier: 100
-      mushroom-modifier: 100
-      pumpkin-modifier: 100
-      sapling-modifier: 100
-      wheat-modifier: 100
-    max-bulk-chunks: 5
-    max-entity-collisions: 8
-    save-structure-info: true
-    arrow-despawn-rate: 1200
-    item-despawn-rate: 6000
     random-light-updates: false
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 8
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -102,3 +78,27 @@ world-settings:
       replace-blocks:
       - 1
       - 5
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 8
+    max-bulk-chunks: 5
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
+    max-entity-collisions: 8
+    save-structure-info: true
+    entity-tracking-range:
+      players: 48
+      animals: 48
+      monsters: 48
+      misc: 32
+      other: 64
