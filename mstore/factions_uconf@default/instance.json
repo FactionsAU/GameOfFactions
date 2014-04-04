@@ -1,0 +1,179 @@
+{
+  "enabled": true,
+  "factionIdNone": "3e60f0e9-532a-49b8-b35d-93f046bdbfe4",
+  "factionIdSafezone": "6a678ccc-493b-4c50-b9fd-86f8832e341c",
+  "factionIdWarzone": "f712ebd4-1a7c-4a8a-9119-93dd6a34efce",
+  "defaultPlayerFactionId": "3e60f0e9-532a-49b8-b35d-93f046bdbfe4",
+  "defaultPlayerRole": "RECRUIT",
+  "defaultPlayerPower": 0.0,
+  "defaultFactionOpen": false,
+  "defaultFactionFlags": {
+    "PERMANENT": false,
+    "PEACEFUL": false,
+    "INFPOWER": false,
+    "POWERLOSS": true,
+    "PVP": true,
+    "FRIENDLYFIRE": false,
+    "MONSTERS": true,
+    "EXPLOSIONS": true,
+    "OFFLINE_EXPLOSIONS": false,
+    "FIRESPREAD": true,
+    "ENDERGRIEF": false
+  },
+  "defaultFactionPerms": {
+    "BUILD": [
+      "LEADER",
+      "OFFICER",
+      "MEMBER",
+      "ALLY"
+    ],
+    "PAINBUILD": [],
+    "DOOR": [
+      "LEADER",
+      "OFFICER",
+      "MEMBER",
+      "RECRUIT",
+      "ALLY"
+    ],
+    "BUTTON": [
+      "LEADER",
+      "OFFICER",
+      "MEMBER",
+      "RECRUIT",
+      "ALLY"
+    ],
+    "LEVER": [
+      "LEADER",
+      "OFFICER",
+      "MEMBER",
+      "RECRUIT",
+      "ALLY"
+    ],
+    "CONTAINER": [
+      "LEADER",
+      "OFFICER",
+      "MEMBER"
+    ],
+    "INVITE": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "KICK": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "SETHOME": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "WITHDRAW": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "TERRITORY": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "ACCESS": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "DISBAND": [
+      "LEADER"
+    ],
+    "PERMS": [
+      "LEADER"
+    ]
+  },
+  "powerMax": 10.0,
+  "powerMin": 0.0,
+  "powerPerHour": 2.0,
+  "powerPerDeath": -2.0,
+  "canLeaveWithNegativePower": true,
+  "factionMemberLimit": 0,
+  "factionPowerMax": 0.0,
+  "factionNameLengthMin": 3,
+  "factionNameLengthMax": 16,
+  "factionNameForceUpperCase": false,
+  "claimsMustBeConnected": true,
+  "claimingFromOthersAllowed": true,
+  "claimsCanBeUnconnectedIfOwnedByOtherFaction": false,
+  "claimsRequireMinFactionMembers": 1,
+  "claimedLandsMax": 0,
+  "homesEnabled": true,
+  "homesMustBeInClaimedTerritory": true,
+  "homesTeleportCommandEnabled": true,
+  "homesTeleportAllowedFromEnemyTerritory": true,
+  "homesTeleportAllowedFromDifferentWorld": true,
+  "homesTeleportAllowedEnemyDistance": 32.0,
+  "homesTeleportIgnoreEnemiesIfInOwnTerritory": true,
+  "homesTeleportToOnDeathActive": false,
+  "homesTeleportToOnDeathPriority": "NORMAL",
+  "permanentFactionsDisableLeaderPromotion": false,
+  "actionDeniedPainAmount": 2.0,
+  "disablePVPForFactionlessPlayers": false,
+  "enablePVPAgainstFactionlessInAttackersLand": false,
+  "territoryShieldFactor": 0.3,
+  "denyCommandsPermanentFactionMember": [],
+  "denyCommandsTerritoryRelation": {
+    "ENEMY": [
+      "home",
+      "sethome",
+      "tpahere",
+      "tpaccept",
+      "tpa",
+      "warp",
+      "warps",
+      "spawn",
+      "wtp",
+      "uspawn",
+      "utp",
+      "mspawn",
+      "mtp",
+      "fspawn",
+      "ftp",
+      "jspawn",
+      "jtp"
+    ],
+    "NEUTRAL": [],
+    "TRUCE": [],
+    "ALLY": [],
+    "MEMBER": []
+  },
+  "lwcRemoveOnChange": {
+    "BUY": false,
+    "SELL": false,
+    "CONQUER": false,
+    "PILLAGE": false
+  },
+  "econEnabled": false,
+  "econLandReward": 0.0,
+  "econUniverseAccount": "",
+  "econChunkCost": {
+    "BUY": 30.0,
+    "SELL": -20.0,
+    "CONQUER": -10.0,
+    "PILLAGE": -10.0
+  },
+  "econCostCreate": 200.0,
+  "econCostSethome": 0.0,
+  "econCostJoin": 0.0,
+  "econCostLeave": 0.0,
+  "econCostKick": 0.0,
+  "econCostInvite": 0.0,
+  "econCostDeinvite": 0.0,
+  "econCostHome": 0.0,
+  "econCostName": 0.0,
+  "econCostDescription": 0.0,
+  "econCostTitle": 0.0,
+  "econCostOpen": 0.0,
+  "econRelCost": {
+    "ENEMY": 0.0,
+    "ALLY": 0.0,
+    "TRUCE": 0.0,
+    "NEUTRAL": 0.0
+  },
+  "bankEnabled": true,
+  "bankFactionPaysCosts": true,
+  "bankFactionPaysLandCosts": true
+}
