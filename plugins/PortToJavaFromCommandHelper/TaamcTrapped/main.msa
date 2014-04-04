@@ -1,0 +1,29 @@
+*:/trapped = >>>
+  if(!sk_can_build(player(),ploc(player()))){
+  set_ploc(get_spawn())
+}else{
+run(/trapped)
+}
+<<<
+
+~ops:/resetworld [$world] = >>>
+@world = $world
+if (@world == ''){
+  @world = pworld()
+}
+if (array_contains(get_worlds(),@world)){
+  store_value(cc('reset_worlds.',@world),time())
+  msg('Players in' @world 'will now teleport to world_newton on login')
+} else{
+  die(cc('Unable to find world, if world already deleted try /forceresetworld ',@world))
+}
+<<<
+
+~ops:/forceresetworld [$world] = >>>
+@world = $world
+if (@world == ''){
+  @world = pworld()
+}
+  store_value(cc('reset_worlds.',@world),time())
+  msg('Players in' @world 'will now teleport to world_newton on login')
+<<<

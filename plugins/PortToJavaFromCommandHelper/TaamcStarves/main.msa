@@ -1,0 +1,25 @@
+*:/mulan = >>>
+foreach(get_teams(),@team){
+if(@team[name] == 'new'){
+@found = @team
+}
+}
+if(get_pscore('deathstat',player()) > 0) {die('You must have 0 deaths')}
+if(not(array_contains(@found[players],player()))){ die ('Too late, only for new players.')}
+if(has_value(cc('mulan.',player())))
+{ die('you chose')}
+store_value(cc('mulan.',player()),pinv())
+sudo('/clear -a')
+broadcast(color(red)'Ill make a man out of'player())
+team_remove_player(new,player())
+team_add_player(mulan,player())
+<<<
+
+*:/mulanverify [$=''] = >>>
+@p = $
+if(equals('',@p)){@p = player()
+@mulan = get_value(cc('mulan.'@p))
+broadcast(@mulan)
+}
+die(@mulan)
+<<<
