@@ -1,0 +1,7 @@
+#.
+#.  Read the tutorial at: http://dev.bukkit.org/bukkit-plugins/holographic-damage-indicators
+#.
+#.  Plugin created by filoghost.
+#.
+format: '&c&l{damage}'
+decimal-places: true
