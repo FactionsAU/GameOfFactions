@@ -1,0 +1,131 @@
+#  ______               _                    _    _____   _             
+# |  ____|             | |                  | |  |  __ \ | |            
+# | |__    _ __    ___ | |__    __ _  _ __  | |_ | |__) || | _   _  ___ 
+# |  __|  | '_ \  / __|| '_ \  / _` || '_ \ | __||  ___/ | || | | |/ __|
+# | |____ | | | || (__ | | | || (_| || | | || |_ | |     | || |_| |\__ \
+# |______||_| |_| \___||_| |_| \__,_||_| |_| \__||_|     |_| \__,_||___/
+#
+# Copyright DarkBlade12 - All rights reserved.
+# DarkBlade12 is the developer and respective owner of this plugin.
+
+# Determines whether the enhanced Anvil is enabled
+# The enhanced Anvil allows you to use enchanted books whose enchantments are over the natural max level correctly with an anvil
+# For example if this is disabled and you want to use an enchanted book with Sharpness VIII to enchant a sword with an Anvil it'll become Sharpness V (the natural max level of the enchantment)
+Enhanced_Anvil_Enabled: true
+
+# This is a list of enchantments that can be used with all EnchantPlus commands that require an enchantment name as input
+# However the plugin will display display the official Minecraft name of every enchantment, no matter which name you've entered
+# Original minecraft and bukkit names are already included
+# You have to replace spaces with underlines when entering the name of an enchantment for a command ("Fire Aspect" -> "/ep enchant Fire_Aspect ...")
+# Format: <desired_name>-<original_name/id>(, ...)
+Enchantments: Protect-0, Fire Protect-1, Feather-2, Fall Protect-2, Blast Protect-3, Explosion Protection-3, Explosion Protect-3, Projectile Protect-4, Projectile-4, Breathing-5, Water Affinity-6, Sharp-16, Undead-17, Arthropods-18, Fire-20, Loot-21, Efficient-32, Silk-33, Infinite-51
+
+# This section contains settings for the enhanced Enchantment Table
+# Enhanced Enchantment Table means that you can enchant items multiple times instead of just one
+Enhanced_Enchantment_Table:
+ 
+ # Determines whether enhanced Enchantment Table is enabled
+ Enabled: true
+ 
+ # Determines whether a fake item which represents the previous state of the item that is being enchanted will be shown at the first hotbar slot in your inventory
+ Show_Item: true
+ 
+ # This section contains settings for the level cost increase of the enhanced Enchantment Table
+ Level_Cost_Increase:
+ 
+  # Determines whether the level cost increase is enabled
+  Enabled: true
+  
+  # This is the value of levels all offered level costs of the enchantment table will be increased by per enchantment
+  # (<normal_cost> + <enchantment_amount> * <value>)
+  # For example one option in the enchantment table costs 5 exp levels, but your item has already 2 enchantments and the value is set to 5, so the cost will be set to 15
+  Value: 5
+ 
+ # This section contains settings for the enchantment stacking of the enhanced Enchantment Table
+ Enchantment_Stacking:
+ 
+  # Determines whether enchantment stacking is enabled
+  Enabled: true
+  
+  # This section contains settings for the max level of the enchantment stacking
+  Max_Level:
+   
+   # Determines whether the max level is enabled
+   Enabled: true
+   
+   # This is the value of the default maximum level of an enchantment
+   # Uses the natural maximum level of an enchantment if set to 0
+   Default_Value: 0
+   
+   # This is a list of custom max levels values of enchantments
+   # This value will override the default max level of the specified enchantments
+   # Format: <name/id>-<max_level>(, ...)
+   List: knockback-2, sharpness-5, protection-6
+
+# This section contains settings for the manual enchanting with the "/ep enchant" command
+Manual_Enchanting:
+ 
+ # Determines whether the player is allowed to have two conflicting enchantments on an item (for example "Sharpness" and "Smite")
+ # Bypass permission: EnchantPlus.bypass.conflicting
+ Allow_Conflicting: false
+ 
+ # Determines whether the player is allowed to apply enchantments to an item that aren inapplicable for it (for example "Sharpness" on a pickaxe)
+ # Bypass permission: EnchantPlus.bypass.inapplicable
+ Allow_Inapplicable: false
+ 
+ # This section contains settings for the condition to have an enchantment table around to enchant something with the command
+ # Bypass permission: EnchantPlus.bypass.condition
+ Enchantment_Table_Condition:
+  
+  # Determines whether the enchantment table condition is enabled
+  Enabled: false
+  
+  # This is the value of the range the enchantment table has to be within to make the player able to use the command
+  Range: 5
+  
+ # This section contains settings for the level restriction of the "/ep enchant command"
+ # Bypass permission: EnchantPlus.bypass.restriction
+ Level_Restriction:
+  
+  # Determines whether the level restriction is enabled
+  Enabled: false
+  
+  # This is the default value of the max level that players can enchant if they don't have the bypass permission
+  # Uses the natural maximum level of an enchantment if set to 0
+  Default_Value: 30
+  
+  # This is a list of custom level restriction values of enchantments
+  # Format: <name/id>-<value>(, ...)
+  List: sharpness-7, protect-10, looting-8
+ 
+ # This section contains settings for the level cost of the "/ep enchant command"
+ # Bypass permission: EnchantPlus.bypass.cost
+ # Cost formula: <per_level> * (<level> - 1) + <base>
+ Level_Cost:
+  
+  # Determines whether the level cost is enabled
+  Enabled: false
+  
+  # This is the default base value
+  Default_Base_Value: 2
+  
+  # This is the default per level value
+  Default_Per_Level_Value: 11
+  
+  # This is a list of custom cost values of enchantments
+  # Format: <name/id>(-b<base>)(-pl<per_level>)(, ...)
+  List: silk-b3-pl14, feather-pl9, thorns-b5
+    
+  # List of settings for regaining levels option
+  Regain_Levels:
+  
+   # Determines whether regaining levels is enabled (for example you downgrade an enchantment by  1 level you will get the levels for 1 level back)
+   Enabled: true
+   
+   # This is the default value of levels the player will get back for downgrading an enchantment per level
+   # Uses the natural maximum level of an enchantment if set to 0
+   Default_Value: 0
+   
+   # This is a list of custom regain levels values of enchantments
+   # Format: <name/id>-<value>(, ...)
+   List: fortune-5, respiration-2, looting-4
